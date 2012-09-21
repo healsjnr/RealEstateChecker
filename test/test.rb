@@ -3,7 +3,7 @@ require File.join(File.expand_path(File.dirname(__FILE__)), '..', 'lib/RealEstat
 begin
   checker = RealEstateChecker::Worker.new 1
   checker.get_page_data
-  checker.output
+  checker.print_output
 rescue Exception => e
   puts e
   puts e.backtrace
